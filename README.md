@@ -11,3 +11,6 @@ No caso desse desafio: https://github.com/zingarelli/desafios-bootcamp-TQI-DIO
 O primeiro desafio foi criar este repositório no GitHub :)
 
 Os próximos desafios serão adicionados a este repositório, cada um em uma pasta separada.
+
+## Desafio HTML/CSS
+Primeiramente, foram seguidos alguns tutoriais utilizando HTML e CSS para trabalhar com transitions e animations, criando efeitos diferentes que serão utilizados no desafio em si. Os tutoriais estão na pasta "tutoriais".
