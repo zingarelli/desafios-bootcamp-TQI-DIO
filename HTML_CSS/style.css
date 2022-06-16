@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Neucha&family=Roboto+Condensed&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #0f3c4e;
+    /* font-family: 'Abel', sans-serif; */
+    font-family: 'Neucha', cursive;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+/* HEADER */
+.header-wrapper {
+    height: 100vh;
+    width: 100%;
+    /* TODO: alterar as cores e também tentar uma animação de ponto brilhante pulsante */
+    background: linear-gradient(-45deg, #60852e, #6cc232, #98eb60, #58b0c0, #116b7d, #0d484f);
+    background-size: 400% 400%; /* width e height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* para trabalhar com o menu hamburger */
+    animation: bgTransition 8s ease-out infinite;
+}
+
+
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 5px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f3c4e;
+    padding: 1rem 4rem;
+    border: 1px solid #0f3c4e;
+    min-width: 4rem; /* para os tamanhos não ficarem tão desproporcionais */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s cubic-bezier(0.55, 0.025, 0.675, 0.97)
+}
+
+.social-media a:hover {
+    color: #0d484f;
+    background-color: #ccfacb;
+}
+
+/* Controlando as etapas da animação */
+@keyframes bgTransition {
+    0% {
+        background-position: 0% 80%; /* posição no eixo X e Y, a partir do topo esquerdo */
+    }
+    50% {
+        background-position: 80% 100%; 
+    }
+    100% {
+        background-position: 0% 80%;
+    }
+}
+
+/* MENU HAMBURGER */
+.checkbox-container {
+    display: flex; /* TODO: será que é necessário? */
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex; /* TODO: será que é necessário aqui também? Os traços estão com posição absoluta... */
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999; /* garantir que o menu fique na frente de tudo */
+    transition: 400ms ease-in-out;
+}
+
+.checkbox .trace {
+    width: 50px;
+    height: 2px;
+    background-color: #0f3c4e   ;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out; /* animação abre e fecha menu */
+}
+
+.checkbox .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0); /* não parece ser necessário (já é o estado inicial), mas resolvi manter */
+}
+
+.checkbox .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0); /* não parece ser necessário (já é o estado inicial), mas resolvi manter */
+}
+
+.checkbox .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0); /* não parece ser necessário (já é o estado inicial), mas resolvi manter */
+}
+
+#toggle{
+    display: none; 
+}
+
+/* CONTEÚDO MENU */
+.menu { /* "bolha" que irá se abrir ao clicar/tocar no menu */
+    position: absolute;
+    top: 28px; /* vai ficar no mesmo espaço que o menu hamburger*/
+    right: 30px;
+    background: transparent; /* o efeito de expansão ao clicar/tocar será feito pela sombra do elemento */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow:  0px 0px 0px 0px #ffffff; /* X Y blur spread e cor*/
+    z-index: -1; /* ficará atrás quando estiver fechado */
+    transition: 0.5s ease-in-out;
+}
+
+/* ficará no centro da tela */
+.menu-items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10; /* quando o menu for aberto, ele deve ficar na frente da "bolha" (que terá valor 9) */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s linear; /* mais rápido ao fechar o menu*/
+}
+
+.menu-items ul {
+    list-style-type: none;
+    padding: 0; /* para ficar centralizado, sem o espaço que seria dos marcadores de lista  */
+}
+
+.menu-items ul li {
+    margin: 15px 0;
+}
+
+.menu-items ul li a{
+    color: #0d484f;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 32px;
+}
+
+.menu-items ul li:hover {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+/* ANIMAÇÃO MENU HAMBURGUER - ABRE E FECHA MENU */
+/* 1ª perninha do X da animação */
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    background-color: #0d484f;
+    top: 47px;
+}
+
+/* irá se deslocar para a esquerda, diminuindo de tamanho e desaparecendo*/
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translateX(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* 2ª perninha do X da animação */
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    background-color: #0d484f;
+    top: 47px;
+}
+
+/* ANIMAÇÃO MENU HAMBURGUER - EXPANDE E RETRAI A SOMBRA */
+#toggle:checked + .checkbox {
+    background: #ffffff;
+}
+
+/* expande a sombra da bolha para a tela inteira, ficando por cima do conteúdo */
+/* No Win10, Opera e Chrome, o box-shadow não fica circular, bonitinho. Fica quadrado após certo tamanho */
+#toggle:checked ~ .menu { /* o ~ aplica o CSS a todos os irmãos com a classe menu */
+    box-shadow: 0px 0px 0px 100vmax #ffffff;
+    z-index: 9; 
+}
+
+#toggle:checked ~ .menu-items {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.7s ease-in; /* mais devagar ao abrir o menu*/
+}
+
+/* CARDS */
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* não tenho certeza se é necessário, pois a direction é column */
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 3rem 0 0 0;
+}
+
+.card-container a {
+    text-decoration: none;
+}
+
+.card {
+    width: 400px;
+    height: 200px;
+    background-image: url('aleksandra-boguslawska-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abel', sans-serif;
+    color: #00008b;
+    filter: grayscale(0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-text {
+    width: 42%;
+    padding: 0 5px;
+    color: rgb(109, 109, 109);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* para poder posicionar a borda expansível */
+}
+
+.card-wrapper::before { /* irá fazer o efeito de borda expansível, dentro do card, centralizada */
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 1px solid #00008b;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card-wrapper h2 {
+    font-size: 46px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    transition: 0.3s;
+    z-index: 1; /* trazer o texto para frente da transparência do background */
+}
+
+.card-wrapper p { 
+    font-size: 0;
+    text-transform: none;
+    margin: 15px 0 0 0;
+    visibility: hidden; /* irá aparecer durante o hover */
+    opacity: 0;
+    z-index: 1; /* trazer o texto para frente da transparência do background */
+    transition: 0.3s;
+}
+
+.card:hover {
+    filter: unset;
+}
+
+/* efeito de borda surgindo e expandindo */
+.card:hover > .card-wrapper::before {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.5); /* para dar mais destaque ao texto */
+    width: 300px;
+    height: 150px;
+}
+
+/* parágrafo surge durante o hover */
+.card:hover > .card-wrapper p { 
+    opacity: 1;
+    visibility: visible;
+    font-size: 26px;
+    z-index: 1;
+}
+
+/* FOOTER */
+.footer {
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #6cc232;
+}
+
+.footer p a {
+    color: #0f3c4e;
+    text-decoration: underline;
+}
+
+/* RESPONSIVO MOBILE */
+@media (max-width: 800px) {
+    .social-media {
+        flex-direction: column;
+    }
+
+    .card-container {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .card-container a {
+        width: 100%;
+    }
+
+    /* corrigindo a ordem em que os texto aparecem */
+    .card-container:nth-child(1), 
+    .card-container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        width: 100%;
+        height: 150px;
+        filter: unset; /* hover no mobile não é tão perceptível */
+    }
+
+    .card-text {
+        width: 80%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    /* anulando os efeitos de hover e deixando tudo visível */
+    .card:hover > .card-wrapper::before, 
+    .card-wrapper::before {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.5); 
+        width: 300px;
+        height: 120px;
+    }
+        
+    .card:hover > .card-wrapper p,
+    .card-wrapper p { 
+        opacity: 1;
+        visibility: visible;
+        font-size: 26px;
+        margin: 0
+    }
+}
+
+/* ajustando o texto na main para telas um pouco maiores */
+@media (max-width: 1100px) {
+    .card-container {
+        width: 85%;
+    } 
+
+    .card-text {
+        padding: 0 15px;
+    }
+}
