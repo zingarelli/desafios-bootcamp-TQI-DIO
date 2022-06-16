@@ -1,7 +1,14 @@
 # Aprendendo transition e animation com CSS
-A instrutora nos tutoriais foi a [Gabriela Pinheiro](https://www.linkedin.com/in/gabrielapinheiro129/), que manja muito de Front-End!
 
-Foram criados 4 arquivos HTML, cada um ensinando técnicas diferentes para criar efeitos e animações utilizando somente HTML e CSS. Foi também ensinado conceitos de Flexbox, que deixou o layout mais responsivo e estruturado.
+A instrutora neste desafio foi a [Gabriela Pinheiro](https://www.linkedin.com/in/gabrielapinheiro129/), que manja muito de Front-End!
+
+## Página Criada
+A página que foi criada para o desafio pode ser vista em: https://desafios-bootcamp-tqi-dio.vercel.app
+
+## Tutoriais
+Inicialmente, a instrutora deu alguns tutoriais, que posteriormente serviram de base para o desenvolvimento do projeto final do desafio. 
+
+Foram criados 4 arquivos HTML, cada um ensinando técnicas diferentes para criar efeitos e animações utilizando somente HTML e CSS. Também foram explicados conceitos de Flexbox, que deixou o layout mais responsivo e estruturado.
 
 - expansão-hover.html: neste primeiro tutorial, foi utilizado filter e transition para criar um efeito de expansão de conteúdo ao se passar o mouse por cima de um "card".
 
@@ -32,5 +39,4 @@ A página possui 3 seções:
 
 O projeto também ficou responsivo, utilizando Media Querys para alterar o layout para telas de tamanhos diferentes. Como em dispositivos touch os efeitos do hover não são tão perceptíveis (a pessoa precisa segurar o toque por alguns segundos para o efeito acontecer), removi os efeitos nos cards, deixando o conteúdo visível desde o começo.
 
-## Página Criada
-A página que foi criada para o desafio pode ser vista em: 
+
