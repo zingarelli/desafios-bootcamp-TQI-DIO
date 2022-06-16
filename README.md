@@ -14,3 +14,7 @@ Os próximos desafios serão adicionados a este repositório, cada um em uma pas
 
 ## Desafio HTML/CSS
 Primeiramente, foram seguidos alguns tutoriais utilizando HTML e CSS para trabalhar com transitions e animations, criando efeitos diferentes que serão utilizados no desafio em si. Os tutoriais estão na pasta "tutoriais".
+
+O desafio foi criar uma página pessoal, com links para as redes sociais/contato, utilizando o que foi aprendido nos tutoriais e também criando Media Queries para deixar a página responsiva para diferentes tamanhos de telas. 
+
+A instrutora tanto nos tutoriais quanto no desafio foi a [Gabriela Pinheiro](https://www.linkedin.com/in/gabrielapinheiro129/), que manja muito de Front-End! 👍
