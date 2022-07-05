@@ -3,7 +3,7 @@
 A instrutora neste desafio foi novamente a [Gabriela Pinheiro](https://www.linkedin.com/in/gabrielapinheiro129/), que mostrou em poucas aulas o poder da união entre HTML, CSS e JavaScript 🚀
 
 ## Jogue online!
-Você pode jogar o jogo da memória que foi criado em: XXXXXXX
+Você pode jogar o jogo da memória que foi criado em: https://bootcamp-tqi-dio-javascript.vercel.app
 
 ## Desafio
 O desafio foi criar um jogo da memória utilizando somente HTML, CSS e JavaScript. O jogo completo foi feito passo a passo pela instrutora, com personagens do Mario estilizando as cartas, em um tabuleiro 4 x 3. Ao clicar nas cartas, elas sofriam animações para serem viradas/desviradas. Foram também criados controles para impedir de se virar mais de 2 cartas por vez e para manter viradas as cartas que davam "match".
