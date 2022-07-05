@@ -18,3 +18,5 @@ Primeiramente, foram seguidos alguns tutoriais utilizando HTML e CSS para trabal
 O desafio foi criar uma página pessoal, com links para as redes sociais/contato, utilizando o que foi aprendido nos tutoriais e também criando Media Queries para deixar a página responsiva para diferentes tamanhos de telas. 
 
 A instrutora tanto nos tutoriais quanto no desafio foi a [Gabriela Pinheiro](https://www.linkedin.com/in/gabrielapinheiro129/), que manja muito de Front-End! 👍
+
+![ezgif com-jogo-memoria](https://user-images.githubusercontent.com/19349339/177368271-c072195e-53bc-4c90-bf97-b8cfbd594e54.gif)
