@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mugiwara's Matching Game</title>
+</head>
+<body>
+    <div class="boardgame">
+        <!-- Images are from https://onepiece.fandom.com -->
+        <main class="memory-game">
+            <div class="card" data-card="brook">
+                <img class="card-front" src="./img/cards/brook.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="chopper">
+                <img class="card-front" src="./img/cards/chopper.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="franky">
+                <img class="card-front" src="./img/cards/franky.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="jinbei">
+                <img class="card-front" src="./img/cards/jinbei.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="luffy">
+                <img class="card-front" src="./img/cards/luffy.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="nami">
+                <img class="card-front" src="./img/cards/nami.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="robin">
+                <img class="card-front" src="./img/cards/robin.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="sanji">
+                <img class="card-front" src="./img/cards/sanji.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="usopp">
+                <img class="card-front" src="./img/cards/usopp.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="zoro">
+                <img class="card-front" src="./img/cards/zoro.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="brook">
+                <img class="card-front" src="./img/cards/brook.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="chopper">
+                <img class="card-front" src="./img/cards/chopper.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="franky">
+                <img class="card-front" src="./img/cards/franky.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="jinbei">
+                <img class="card-front" src="./img/cards/jinbei.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="luffy">
+                <img class="card-front" src="./img/cards/luffy.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="nami">
+                <img class="card-front" src="./img/cards/nami.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="robin">
+                <img class="card-front" src="./img/cards/robin.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="sanji">
+                <img class="card-front" src="./img/cards/sanji.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="usopp">
+                <img class="card-front" src="./img/cards/usopp.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+            <div class="card" data-card="zoro">
+                <img class="card-front" src="./img/cards/zoro.jpg" alt="Face da carta">
+                <img class="card-back" src="./img/cards/mugiwara-jolly-roger.png" alt="Verso da carta">
+            </div>
+        </main>
+        <aside class="scoreboard-panel">
+            <div class="scoreboard">
+                <div class="current-round">CURRENT GAME</div>
+                <span id="current-score">0 ATTEMPTS</span>
+                <div class="best-round">BEST GAME</div>
+                <span id="best-score">0 ATTEMPTS</span>
+                <br>
+                <span id="new-high-score">New High Score!</span>
+            </div>
+            <button type="button" class="new-game-button">NEW GAME</button>
+        </aside>
+    </div>
+    <footer>Memory Game created by <a href="https://github.com/SpruceGabriela" target="_blank">Gabriela Pinheiro</a> and modified by <a href="https://github.com/zingarelli" target="_blank">Matheus Zingarelli</a>. Bootcamp TQI|DIO.</footer>
+    <script src="./script.js"></script>
+</body>
+</html>
