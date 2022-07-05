@@ -17,6 +17,7 @@ Primeiramente, foram seguidos alguns tutoriais utilizando HTML e CSS para trabal
 
 O desafio foi criar uma página pessoal, com links para as redes sociais/contato, utilizando o que foi aprendido nos tutoriais e também criando Media Queries para deixar a página responsiva para diferentes tamanhos de telas. 
 
-A instrutora tanto nos tutoriais quanto no desafio foi a [Gabriela Pinheiro](https://www.linkedin.com/in/gabrielapinheiro129/), que manja muito de Front-End! 👍
+## Desafio JavaScript
+O desafio foi criar um jogo da memória utilizando somente HTML, CSS e JavaScript. O jogo completo foi feito passo a passo pela instrutora, e depois personalizado por mim com uma temática de One Piece, em um tabuleiro 4 x 5 com 20 cartas. Além disso, adicionei um painel lateral com um placar mostrando dinamicamente a quantidade de tentativas feitas pelo jogador/jogadora e o melhor placar dentre todos os jogos. Adicionei também um botão de "New Game" para o jogador/jogadora poder jogar novamente quantas vezes quiser e tentar bater o melhor placar (o qual é zerado somente quando a página é recarregada).
 
-![ezgif com-jogo-memoria](https://user-images.githubusercontent.com/19349339/177368271-c072195e-53bc-4c90-bf97-b8cfbd594e54.gif)
+A instrutora nos desafios de HTML/CSS e JavaScript foi a [Gabriela Pinheiro](https://www.linkedin.com/in/gabrielapinheiro129/), que manja muito de Front-End! 👍
