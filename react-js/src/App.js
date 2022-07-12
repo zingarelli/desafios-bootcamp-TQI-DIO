@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import useGitHub from "./components/GitHubHooks/GitHubHooks";
 import Layout from "./components/Layout/Layout";
 import NoSearch from "./components/NoSearch/NoSearch";
@@ -42,7 +43,8 @@ function App() {
           </>
         ) : (
           <NoSearch />
-        )}        
+        )}
+      <Footer />   
       </Layout>
   );
 }

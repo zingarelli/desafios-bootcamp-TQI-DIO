@@ -67,6 +67,7 @@ function GitHubProvider({children}){
             if(e.response.status === 404) {
                 setGitHubState((prevState) => ({
                     ...prevState,
+                    hasUser: true,
                     user: {login: null},
                 }));
             };
