@@ -3,7 +3,7 @@
 O instrutor neste desafio foi o [Matheus Benites](https://www.linkedin.com/in/omatheusbenites/).
 
 ## Página Criada
-Você pode visualizar a página criada em: XXX
+Você pode visualizar a página criada em: https://desafios-bootcamp-tqi-dio-ivory.vercel.app
 
 ## Desafio
 O desafio consistiu em criar uma aplicação em React que consome dados da API do GitHub por meio da busca por um usuário. Com estes dados, é criada uma página personalizada do usuário, com algumas informações de perfil e duas abas mostrando os repositórios criados pelo usuário e os repositórios que ele/ela marcou com Star.
