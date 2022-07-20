@@ -25,4 +25,4 @@ A aplicação foi inicialmente desenvolvida utilizando a IDE IntelliJ Community 
 
 Posteriormente, a aplicação foi refatorada utilizando a IDE Visual Studio Code 1.69.2, adicionando testes unitários.
 
-A versão do JUnit utilizada para os testes unitários se encontra na pasta lib.
+A versão do JUnit utilizada para os testes unitários se encontra na [pasta lib](https://github.com/zingarelli/desafios-bootcamp-TQI-DIO/tree/main/lib).
