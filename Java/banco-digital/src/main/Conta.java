@@ -1,3 +1,4 @@
+package main;
 public class Conta {
     private static final int AGENCIA_PADRAO = 0001;
     private static int SEQUENCIAL = 1;
@@ -13,6 +14,8 @@ public class Conta {
         this.numero = SEQUENCIAL++;
         this.titular = cliente;
     }
+
+    //TODO: tratar quando valor informado é negativo. Talvez usar exceção?
 
     public void sacar(double valor){
         saldo -= valor; //assumindo que a conta pode ficar negativa
