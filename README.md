@@ -43,3 +43,9 @@ Os últimos desafios do bootcamp estão relacionados à linguagem Java.
 Neste primeiro desafio Java foi criada uma aplicação simulando um banco digital, com cadastro de clientes, contas bancárias e realização de transações bancárias, de modo a consolidar os conceitos de Orientação a Objetos (abstração, encapsulamento, herança e polimorfismo).
 
 O instrutor neste desafio foi o [Venilton FalvoJr](https://www.linkedin.com/in/falvojr/), Tech Lead da DIO.
+
+### Padrões de Projetos (Design Patterns)
+
+O segundo desafio Java consistiu em implementar três design patterns: Singleton, Strategy e Facade. A implementação foi feita utilizando Java puro, codificando cada padrão, e também utilizando o Spring Framework de Java. 
+
+O instrutor neste desafio foi novamente o [Venilton FalvoJr](https://www.linkedin.com/in/falvojr/), Tech Lead da DIO.
