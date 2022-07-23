@@ -49,3 +49,15 @@ O instrutor neste desafio foi o [Venilton FalvoJr](https://www.linkedin.com/in/f
 O segundo desafio Java consistiu em implementar três design patterns: Singleton, Strategy e Facade. A implementação foi feita utilizando Java puro, codificando cada padrão, e também utilizando o Spring Framework de Java. 
 
 O instrutor neste desafio foi novamente o [Venilton FalvoJr](https://www.linkedin.com/in/falvojr/), Tech Lead da DIO.
+
+### Testes Unitários
+
+O último desafio consistiu em consolidar os conhecimentos de Testes Unitários (e também um pouco de TDD) em um projeto Java de uma API REST. Para isso, é utilizado o Postman para testar as chamadas à API, bem como JUnit e Hamcrest para os testes unitários. Foi utilizado também o Mockito, para mockar alguns comportamentos de resposta da API.
+
+O instrutor neste último desafio do bootcamp foi o [Rodrigo Peleias](https://www.linkedin.com/in/rodrigopeleias/).
+
+# Agradecimentos
+
+Muito obrigado à [DIO](https://www.dio.me) por fornecer a plataforma e as dezenas de cursos, à [TQI](https://www.tqi.com.br), que patrocinou este bootcamp, e em especial, um agradecimento a todos os instrutores e instrutoras nos cursos, desafios e lives de mentoria. 
+
+Esta foi minha primeira experiência em um bootcamp e eu pude aprender muito sobre todas as trilhas necessárias para se tornar um desenvolvedor FullStack. Foi tudo muito proveitoso, porém confesso que é uma carga alta de informação a ser assimilada em pouco tempo. Agora irei continuar os estudos em cada área de front e backend, até ter a confiança e conhecimento necessários para me reconhecer como um verdadeiro desenvolvedor FullStack.

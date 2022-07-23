@@ -3,7 +3,7 @@
 O instrutor neste último desafio do bootcamp foi o [Rodrigo Peleias](https://www.linkedin.com/in/rodrigopeleias/).
 
 ## Repositório
-O código está disponível [neste repositório](...).
+O código está disponível [neste repositório](https://github.com/zingarelli/desafios-bootcamp-TQI-DIO/tree/main/Java/testes-unitarios-beer-api).
 
 ## Desafio
 O último desafio consistiu em consolidar os conhecimentos de Testes Unitários (e também um pouco de TDD) em um projeto Java de uma API REST. Para isso, é utilizado o Postman para testar as chamadas à API, bem como JUnit e Hamcrest para os testes unitários. Foi utilizado também o Mockito, para mockar alguns comportamentos de resposta da API.
