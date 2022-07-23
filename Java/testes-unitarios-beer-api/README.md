@@ -14,7 +14,7 @@ O projeto possui somente uma entidade (tabela) chamada Beer (cerveja), que guard
 
 A API é mapeada e desenvolvida para fornecer os seguintes serviços: criação de uma cerveja, procurar uma cerveja por seu nome, listar todas as cervejas, remover uma cerveja pelo id e incrementar o estoque de uma cerveja, passando o valor do incremento. Também seria implementado o serviço de decremento de estoque, porém não foi abordado pelo instrutor e *eu não pude verificar esta implementação devido ao pouco tempo que eu tinha disponível para finalizar o bootcamp*. O código para esta parte, no entanto, se encontra comentado no projeto, bem como outros testes que também não chegaram a ser implementados.
 
-Os testes unitários se concentraram em duas partes do projeto: BeerController.java, responsável pelas chamadas ao serviço (utilizando GET, POST, PATCH e DELETE), e BeerService.java, responsável por de fato fazer a persistência ao banco (o projeto utiliza o H2, que é um banco de dados que roda em memória). Para tanto, foram cliadas as classes BeerControllerTest.java e BeerServiceTest.java.
+Os testes unitários se concentraram em duas partes do projeto: BeerController.java, responsável pelas chamadas ao serviço (utilizando GET, POST, PATCH e DELETE), e BeerService.java, responsável por de fato fazer a persistência ao banco (o projeto utiliza o H2, que é um banco de dados que roda em memória). Para tanto, foram criadas as classes BeerControllerTest.java e BeerServiceTest.java.
 
 ### Testes na BeerControllerTest.java
 - validar sucesso em uma chamada POST para criação de cerveja;
